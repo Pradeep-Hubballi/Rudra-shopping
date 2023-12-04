@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <meta chartset=""UTF-8">
+        <title>Rudra shopping</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link rel="stylesheet"
+         href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">  <img src="images/logo23.png" width="125px" height="125px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.jpg" width="30px" height="30px"></a>
+                <img src="images/three.png" class="menu-icon" onclick="menutoggle()">
+            
+    
+            </div>
+            
+
+            </div>
+
+        </div>
+        
+    <!----------------account-page------>
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/y.jpg" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forget password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Register</button>
+                            <a href="">Forget password</a>
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+            <!----------------footer--->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>>Dowload our App</h3>
+                        <p>>Dowload our App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                        <img src="images/play.png">
+                        <img src="images/app.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo23.png">
+                        <p>>Dowload our App for Android and ios mobile phone</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>usefull links</h3>
+                      <ul>
+                        <li>coupons</li>
+                        <li>BLOG POST</li>
+                        <li>RETURN policy</li>
+                        <li>join Affiliate</li>
+                      </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follows us</h3>
+                      <ul>
+                        <li>Facebok</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>You tube</li>
+                      </ul>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p class="copyright">copyright 2023 = Easy Tutorial</p>
+            </div>
+        </div>
+        <!----------------------jd for toggle Form------------>
+
+
+        <script>
+            var LoginForm=document.getElementById("LoginForm");
+            var RegForm=document.getElementById("RegForm");
+            var Indicator = document.getElementById("Indicator");
+
+            function register(){
+                RegForm.style.transform = "translate(0px)";
+                LoginForm.style.transform = "translate(0px)";
+                Indicator.style.transform = "translate(100px)";
+
+            }
+            function login(){
+                RegForm.style.transform = "translate(300px)";
+                LoginForm.style.transform = "translate(300px)";
+                Indicator.style.transform = "translate(0px)";
+
+            }
+        </script>
+
+    </body>
+</html>
